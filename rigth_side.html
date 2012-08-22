@@ -1,0 +1,46 @@
+<div id="sidebar">
+	<ul>
+	<li>
+		<div id="search" >
+			<!-- Búsqueda Google -->
+			<form method=GET action="http://www.google.com/search">
+			<table><tr><td>
+				<center><img style="margin-right:60px;" src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle"></center>
+				<input TYPE=text name=q size=20 value=""><input type=submit name=btnG value="Buscar">
+				<input TYPE=hidden name=hl value=es>
+			</td></tr></table>
+			</form>
+			<!-- Búsqueda Google -->
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</li>
+	<li>
+		<p><a href="http://www.usb.ve">Universidad Simón Bolívar</a></p>
+		<p><a href="http://www.tudescuenton.com">Tudescuenton.com</a></p>
+	</li>
+	</ul>
+	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 2,
+		  interval: 80000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+			shell: {
+			  background: '#363636',
+			  color: '#ffffff'
+			},
+			tweets: {
+			  background: '#000000',
+			  color: '#ffffff',
+			  links: '#b7c4cc'
+			}
+		  },
+		  features: {scrollbar: false,loop: false,live: false,behavior: 'all'}
+		}).render().setUser('pdaniel87').start();
+	</script>
+</div>
+<!-- end #sidebar -->
